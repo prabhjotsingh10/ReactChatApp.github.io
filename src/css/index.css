@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Faustina&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Faustina', serif;
+}
+
+hr{
+    width: 21em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    border:0.5px solid lightgray ;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/Back.jpg");
+    background-size:contain ;
+}
+
+.logo{
+    top: 0.1em;
+    left: 0.1em;
+    position: absolute;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 1em;
+    margin: 3em;
+    position: relative;
+    box-shadow: 0.2em 0.2em 0.5em #808080;
+    background-color: #ffffff;
+    height: 40em;
+    /* width: 60em; */
+    max-width: 250em;
+}
+
+.chatmate{
+    color: #009638;
+    display: block;
+    position: relative;
+    background-color: #ededed;
+    min-height: 4em;
+}
+
+.sgn_out{
+    display:block;
+    text-decoration: none;
+    text-align: end;
+    padding-right: 1em;
+    color: red;
+}
+
+.contacts ul {
+    list-style-type: none;
+}
+
+
+.stay_connected{
+    /* display: flex; */
+    align-self: center;
+    text-align: center;
+    width: 60em;   
+    position: relative;
+    height: 40em;
+}
+
+.sty_cntd{
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+    color:#009638;
+}
+
+.img1{
+    border-radius: 5em;
+    display: inline-block;
+}
+
+.details h3 {
+    display: inline-block;
+}
+
+/* 
+.details p {
+    color: #454842;
+} */
+
+.cntc_1{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    margin: 0.5em;
+}
+
+.username
+{
+    display: block;
+    text-align: end;
+    padding:0.4em;
+}
+
+.details p{
+    margin-top: 1em;
+}
+
+.contacts{
+    border: 1px solid lightgray;
+    overflow: scroll;
+    min-width: 25em;
+}
+
+.user_profile{
+    text-align: center;
+    margin-bottom: 2em;
+    color: #808080;
+    margin-top: 0.5em;
+}
+
+.user_profile h3{
+    color: #009638;
+}
+
+.dm:hover{
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+.strt_cnvo{
+    margin-bottom: 1em;
+    color: #009638;
+}
+
+.grp_chat li{
+    margin-top: 1em;
+}
+
+#grp_cnvo{
+    margin-top: 2em;
+}
+
+.msgbox{
+    /* display: flex; */
+    justify-self: center;
+    min-width: 60em;
+    max-width: 80em;
+    resize: none;   
+}
+
+.snd_msg{
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    border-radius: 0.2em;
+    cursor: pointer;
+    color: #009638;
+    background-color: white;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+.msg_div{
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr; 
+    margin-top: 4em;
+    grid-gap: 1em;
+    position: absolute;
+    bottom: 0.2em;
+}
+
+.msgbox {
+    /* display: flex; */
+    justify-self: center;
+    /* min-width: 30em; */
+    max-width: 80em;
+    resize: none;
+}
+
+.pete{
+    font-weight: bold;
+    color: green;
+
+}
+
+.jess_msg{
+    border: 1px solid black;
+    padding: 1em;
+    width: 10em;
+    border-radius: 0.4em;
+    position: absolute;
+    right: 1.5em;
+    bottom: 3.5em;
+    background-color: lightgreen;
+}
+
+.pete_msg{
+    border: 1px solid black;
+    padding: 1em;
+    width: 10em;
+    border-radius: 0.4em;
+    position: absolute;
+    left: 1.5em;
+    bottom: 3.5em;
+    background-color: rgba(5,130,253,0.3);
+}
+
+.strt_cnvo_pete{
+    font-size: 1.2em;
+}
+
+.usr_nme{
+    font-weight: lighter;
+    color: green;
+}
+
+/************* MEDIA QUERIES ***********************/
+
+@media (max-width: 576px) {  
+    
+    .app{
+        display: inline-block;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 1em;
+    margin: 3em;
+    position: relative;
+    box-shadow: 0.2em 0.2em 0.5em #808080;
+    background-color: #ffffff;
+    height: auto;
+    /* width: 60em; */ 
+    max-width: 250em;
+    }
+
+    .stay_connected{
+        display: none;
+    }
+
+    .main{
+    display: block;
+    height: 100%;
+    width: 31em;
+    background: url('../img/Back.jpg');
+    background-size: contain;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .main{
+    display: flex;
+    height: 100%;
+    max-width: 100em;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/Back.jpg);
+    background-size: contain;
+
+}
+}
+@media (max-width: 768px) { 
+
+
+    .app{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 1em;
+    margin: 3em;
+    position: relative;
+    box-shadow: 0.2em 0.2em 0.5em #808080;
+    background-color: #ffffff;
+    height: 40em;
+    width: 60em;
+  }
+
+  .strt_cnvo{
+    
+        margin-bottom: 1em;
+        color: #009638;
+        margin-left: -20em;
+    }
+
+    .stay_connected p{
+            margin-left: -24em;
+        }
+    
+
+    .msgbox {
+        /* display: flex; */
+        justify-self: center;
+        min-width: 30em;
+        max-width: 80em;
+        resize: none;
+    }
+
+}
